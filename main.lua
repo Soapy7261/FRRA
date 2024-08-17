@@ -6,6 +6,10 @@ ADJUSTMENT_INCREMENT = 5 -- Setting this too high can cause cases where an effic
 
 -- CODE --
 LOGIC_ADAPTER = peripheral.find("fusionReactorLogicAdapter")
+if LOGIC_ADAPTER == nil then
+    print ("The computer is not connected to a fusion reactor logic adapter! Exiting...")
+    os.exit()
+end
 LOGIC_ADAPTER.adjustReactivity(-100) -- Normalize the environment for possible edge cases
 os.sleep(2) -- race conditions, dont remove this unless you can somehow fix the race condition, oh and make a PR on the github please
 while true do
