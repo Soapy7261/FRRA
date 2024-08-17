@@ -1,5 +1,5 @@
 # What is this?
-This is a LUA script that will figure out the best efficiency for a fusion reactor in [BFRM](https://modrinth.com/mod/better-fusion-reactor-for-mekanism), this does nothing (and will break) without that mod, nor do you need this anyway.
+This is a LUA script that will figure out 80+ efficiency (the point where the error level start increasing) for a fusion reactor in [BFRM](https://modrinth.com/mod/better-fusion-reactor-for-mekanism), this does nothing (and will break) without that mod, nor do you need this anyway.
 
 # How to setup
 1. Make and add a fusion reactor logic adapter to your fusion reactor, then put a computer craft computer infront of it, if you did it correctly, if you run `peripherals` in the computer it should show `fusionReactorLogicAdapter` like in this screenshot (where its attached does not matter, it just needs to be there)
